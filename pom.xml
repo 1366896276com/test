@@ -21,12 +21,23 @@
   </repositories>
  
   <dependencies>
+   <!-- http://mvnrepository.com/artifact/org.hamcrest/hamcrest-all -->
+	<!-- 此依赖要放在junit之前，否则测试的会报找不到方法的冲突 -->
+	<dependency>
+	    <groupId>org.hamcrest</groupId>
+	    <artifactId>hamcrest-all</artifactId>
+	    <version>1.3</version>
+	    <scope>test</scope>
+	</dependency>
+	
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>4.10</version>
       <scope>test</scope>
     </dependency>
+    
+   
     
     </dependencies>
   
